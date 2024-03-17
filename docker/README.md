@@ -8,15 +8,25 @@ The site can be ran in docker for development. A self signed certificate will be
 
 ## Configuration
 
-The config assumes the local uid and gid are both 1000. If your local ids are differnet values set environment variables `UID` and/or `GID` with the correct values
+The config assumes the local uid and gid are both 1000. If your local ids are different values set environment variables `UID` and/or `GID` with the correct values
 
 ## Running
 
 `docker compose up -d`
 
-## Accessing
+## Initialise
 
-Navigate to https://localhost:8443
+Navigate to https://localhost:8443/int/Initialise.php
+
+Enter the following details:
+| Setting           | Value      |
+|-------------------|------------|
+| Host Name         | db         |
+| Database Name     | chippenham |
+| Database User     | root       |
+| Database Password | chippenham |
+| Testing mode      | 1          |
+| Title Prefix      | dev        |
 
 ## PHP settings
 
